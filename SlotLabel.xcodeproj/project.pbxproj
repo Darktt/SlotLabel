@@ -7,28 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F23A5E5F2AA6BC350036C5DE /* SlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A5E5D2AA6BC350036C5DE /* SlotViewController.swift */; };
+		F23A5E602AA6BC350036C5DE /* SlotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23A5E5E2AA6BC350036C5DE /* SlotViewController.xib */; };
+		F25947B72AA6F63800529932 /* SlotCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25947B62AA6F63800529932 /* SlotCharacterView.swift */; };
+		F25947BA2AA703E400529932 /* SlotCharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25947B82AA703E400529932 /* SlotCharacterCell.swift */; };
+		F25947BB2AA703E400529932 /* SlotCharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25947B92AA703E400529932 /* SlotCharacterCell.xib */; };
+		F29B5B7E2AA6C78A0053FE67 /* ViewControllerPreviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B5B7D2AA6C78A0053FE67 /* ViewControllerPreviewer.swift */; };
+		F29B5B862AA6D2F40053FE67 /* CustomCellRegistrable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B5B842AA6D2F40053FE67 /* CustomCellRegistrable.swift */; };
+		F2E450DA2AA822A000FD2F49 /* SlotNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E450D92AA822A000FD2F49 /* SlotNumberView.swift */; };
 		F2EB987B2A9C39E10027E887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB987A2A9C39E10027E887 /* AppDelegate.m */; };
 		F2EB987E2A9C39E10027E887 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB987D2A9C39E10027E887 /* SceneDelegate.m */; };
-		F2EB98812A9C39E10027E887 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB98802A9C39E10027E887 /* ViewController.m */; };
-		F2EB98842A9C39E10027E887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2EB98822A9C39E10027E887 /* Main.storyboard */; };
 		F2EB98862A9C39E20027E887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EB98852A9C39E20027E887 /* Assets.xcassets */; };
 		F2EB98892A9C39E20027E887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2EB98872A9C39E20027E887 /* LaunchScreen.storyboard */; };
 		F2EB988C2A9C39E20027E887 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB988B2A9C39E20027E887 /* main.m */; };
+		F2EB98B62A9C67D90027E887 /* FluentInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB98B52A9C67D90027E887 /* FluentInterface.swift */; };
+		F2F230182AA185EF0039CD2C /* SwiftExtensions.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F230172AA185EF0039CD2C /* SwiftExtensions.xcframework */; };
+		F2F230192AA185EF0039CD2C /* SwiftExtensions.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2F230172AA185EF0039CD2C /* SwiftExtensions.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F2F2301A2AA185EF0039CD2C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F2F230192AA185EF0039CD2C /* SwiftExtensions.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F23A5E5D2AA6BC350036C5DE /* SlotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotViewController.swift; sourceTree = "<group>"; };
+		F23A5E5E2AA6BC350036C5DE /* SlotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlotViewController.xib; sourceTree = "<group>"; };
+		F25947B62AA6F63800529932 /* SlotCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotCharacterView.swift; sourceTree = "<group>"; };
+		F25947B82AA703E400529932 /* SlotCharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotCharacterCell.swift; sourceTree = "<group>"; };
+		F25947B92AA703E400529932 /* SlotCharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlotCharacterCell.xib; sourceTree = "<group>"; };
+		F29B5B7D2AA6C78A0053FE67 /* ViewControllerPreviewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPreviewer.swift; sourceTree = "<group>"; };
+		F29B5B842AA6D2F40053FE67 /* CustomCellRegistrable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellRegistrable.swift; sourceTree = "<group>"; };
+		F2E450D92AA822A000FD2F49 /* SlotNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotNumberView.swift; sourceTree = "<group>"; };
 		F2EB98762A9C39E10027E887 /* SlotLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlotLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EB98792A9C39E10027E887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2EB987A2A9C39E10027E887 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F2EB987C2A9C39E10027E887 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		F2EB987D2A9C39E10027E887 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		F2EB987F2A9C39E10027E887 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F2EB98802A9C39E10027E887 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F2EB98832A9C39E10027E887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2EB98852A9C39E20027E887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2EB98882A9C39E20027E887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2EB988A2A9C39E20027E887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2EB988B2A9C39E20027E887 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2EB98932A9C3A210027E887 /* SlotLabel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlotLabel-Bridging-Header.h"; sourceTree = "<group>"; };
+		F2EB98B52A9C67D90027E887 /* FluentInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluentInterface.swift; sourceTree = "<group>"; };
+		F2F230172AA185EF0039CD2C /* SwiftExtensions.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SwiftExtensions.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2F230182AA185EF0039CD2C /* SwiftExtensions.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +77,10 @@
 		F2EB986D2A9C39E10027E887 = {
 			isa = PBXGroup;
 			children = (
+				F2EB98922A9C39FA0027E887 /* Source */,
 				F2EB98782A9C39E10027E887 /* SlotLabel */,
 				F2EB98772A9C39E10027E887 /* Products */,
+				F2F230162AA185EF0039CD2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +95,41 @@
 		F2EB98782A9C39E10027E887 /* SlotLabel */ = {
 			isa = PBXGroup;
 			children = (
+				F23A5E5D2AA6BC350036C5DE /* SlotViewController.swift */,
+				F23A5E5E2AA6BC350036C5DE /* SlotViewController.xib */,
+				F2EB98B52A9C67D90027E887 /* FluentInterface.swift */,
+				F29B5B7D2AA6C78A0053FE67 /* ViewControllerPreviewer.swift */,
+				F29B5B842AA6D2F40053FE67 /* CustomCellRegistrable.swift */,
 				F2EB98792A9C39E10027E887 /* AppDelegate.h */,
 				F2EB987A2A9C39E10027E887 /* AppDelegate.m */,
 				F2EB987C2A9C39E10027E887 /* SceneDelegate.h */,
 				F2EB987D2A9C39E10027E887 /* SceneDelegate.m */,
-				F2EB987F2A9C39E10027E887 /* ViewController.h */,
-				F2EB98802A9C39E10027E887 /* ViewController.m */,
-				F2EB98822A9C39E10027E887 /* Main.storyboard */,
+				F2EB98932A9C3A210027E887 /* SlotLabel-Bridging-Header.h */,
 				F2EB98852A9C39E20027E887 /* Assets.xcassets */,
 				F2EB98872A9C39E20027E887 /* LaunchScreen.storyboard */,
 				F2EB988A2A9C39E20027E887 /* Info.plist */,
 				F2EB988B2A9C39E20027E887 /* main.m */,
 			);
 			path = SlotLabel;
+			sourceTree = "<group>";
+		};
+		F2EB98922A9C39FA0027E887 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F2E450D92AA822A000FD2F49 /* SlotNumberView.swift */,
+				F25947B62AA6F63800529932 /* SlotCharacterView.swift */,
+				F25947B82AA703E400529932 /* SlotCharacterCell.swift */,
+				F25947B92AA703E400529932 /* SlotCharacterCell.xib */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F2F230162AA185EF0039CD2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2F230172AA185EF0039CD2C /* SwiftExtensions.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +142,7 @@
 				F2EB98722A9C39E10027E887 /* Sources */,
 				F2EB98732A9C39E10027E887 /* Frameworks */,
 				F2EB98742A9C39E10027E887 /* Resources */,
+				F2F2301A2AA185EF0039CD2C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -107,6 +164,7 @@
 				TargetAttributes = {
 					F2EB98752A9C39E10027E887 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -133,9 +191,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23A5E602AA6BC350036C5DE /* SlotViewController.xib in Resources */,
 				F2EB98892A9C39E20027E887 /* LaunchScreen.storyboard in Resources */,
 				F2EB98862A9C39E20027E887 /* Assets.xcassets in Resources */,
-				F2EB98842A9C39E10027E887 /* Main.storyboard in Resources */,
+				F25947BB2AA703E400529932 /* SlotCharacterCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +205,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2EB98812A9C39E10027E887 /* ViewController.m in Sources */,
+				F25947BA2AA703E400529932 /* SlotCharacterCell.swift in Sources */,
+				F29B5B862AA6D2F40053FE67 /* CustomCellRegistrable.swift in Sources */,
+				F29B5B7E2AA6C78A0053FE67 /* ViewControllerPreviewer.swift in Sources */,
+				F25947B72AA6F63800529932 /* SlotCharacterView.swift in Sources */,
 				F2EB987B2A9C39E10027E887 /* AppDelegate.m in Sources */,
 				F2EB988C2A9C39E20027E887 /* main.m in Sources */,
+				F2EB98B62A9C67D90027E887 /* FluentInterface.swift in Sources */,
+				F2E450DA2AA822A000FD2F49 /* SlotNumberView.swift in Sources */,
+				F23A5E5F2AA6BC350036C5DE /* SlotViewController.swift in Sources */,
 				F2EB987E2A9C39E10027E887 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,14 +221,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F2EB98822A9C39E10027E887 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F2EB98832A9C39E10027E887 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F2EB98872A9C39E20027E887 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,13 +347,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZW7GPL8D3J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SlotLabel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +365,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.SlotLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SlotLabel/SlotLabel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -316,13 +377,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZW7GPL8D3J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SlotLabel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +395,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.SlotLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SlotLabel/SlotLabel-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

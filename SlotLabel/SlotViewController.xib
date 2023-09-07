@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SlotViewController" customModule="SlotLabel" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="Xe0-ZY-ShT" id="pvP-RB-dA6"/>
+                <outlet property="slotNumberView" destination="BOr-Jq-qQT" id="U6V-O8-UME"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOr-Jq-qQT" customClass="SlotNumberView" customModule="SlotLabel" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="415" width="393" height="22"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3j-MQ-yvR">
+                            <rect key="frame" x="253" y="0.0" width="140" height="22"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3MN-fO-Wjq" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KJc-AN-7Ud">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="KJc-AN-7Ud" secondAttribute="trailing" id="7Ra-ZO-Tfg"/>
+                                        <constraint firstAttribute="bottom" secondItem="KJc-AN-7Ud" secondAttribute="bottom" id="GJv-Po-2Mv"/>
+                                        <constraint firstItem="KJc-AN-7Ud" firstAttribute="top" secondItem="3MN-fO-Wjq" secondAttribute="top" id="KBz-S0-Cbs"/>
+                                        <constraint firstAttribute="width" constant="10" id="Ksw-Ga-l1i"/>
+                                        <constraint firstItem="KJc-AN-7Ud" firstAttribute="leading" secondItem="3MN-fO-Wjq" secondAttribute="leading" id="b2K-ob-oEH"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="KJc-AN-7Ud" id="bbH-nw-3cY"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxV-ra-TNI" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TJZ-Mz-Qda">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="TJZ-Mz-Qda" firstAttribute="leading" secondItem="pxV-ra-TNI" secondAttribute="leading" id="6w4-Pk-4Fh"/>
+                                        <constraint firstAttribute="width" constant="10" id="Iot-dO-cfY"/>
+                                        <constraint firstAttribute="bottom" secondItem="TJZ-Mz-Qda" secondAttribute="bottom" id="OcB-kO-Ond"/>
+                                        <constraint firstAttribute="trailing" secondItem="TJZ-Mz-Qda" secondAttribute="trailing" id="X4N-lj-pV5"/>
+                                        <constraint firstItem="TJZ-Mz-Qda" firstAttribute="top" secondItem="pxV-ra-TNI" secondAttribute="top" id="fYM-Rd-vWO"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="TJZ-Mz-Qda" id="7Sl-Rf-X5x"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbB-j9-l2M" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9uI-tm-eVb">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="9uI-tm-eVb" secondAttribute="bottom" id="EIE-gp-SZk"/>
+                                        <constraint firstAttribute="width" constant="10" id="Pmj-cW-KIC"/>
+                                        <constraint firstItem="9uI-tm-eVb" firstAttribute="top" secondItem="mbB-j9-l2M" secondAttribute="top" id="d5v-8N-629"/>
+                                        <constraint firstAttribute="trailing" secondItem="9uI-tm-eVb" secondAttribute="trailing" id="icG-yq-s6O"/>
+                                        <constraint firstItem="9uI-tm-eVb" firstAttribute="leading" secondItem="mbB-j9-l2M" secondAttribute="leading" id="sd4-rF-Rkx"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="9uI-tm-eVb" id="gda-Wu-ffm"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jsw-TQ-KEh" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="30" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ikX-Ry-rSI">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="ikX-Ry-rSI" secondAttribute="bottom" id="5e7-TE-HaC"/>
+                                        <constraint firstItem="ikX-Ry-rSI" firstAttribute="leading" secondItem="Jsw-TQ-KEh" secondAttribute="leading" id="6SW-yj-2yZ"/>
+                                        <constraint firstAttribute="width" constant="10" id="mJJ-K6-iOW"/>
+                                        <constraint firstItem="ikX-Ry-rSI" firstAttribute="top" secondItem="Jsw-TQ-KEh" secondAttribute="top" id="t6t-L1-8Nn"/>
+                                        <constraint firstAttribute="trailing" secondItem="ikX-Ry-rSI" secondAttribute="trailing" id="zDI-oL-THe"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="ikX-Ry-rSI" id="hIX-9E-qQu"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xda-eR-SiU" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="40" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oro-WW-ust">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="oro-WW-ust" firstAttribute="top" secondItem="xda-eR-SiU" secondAttribute="top" id="2T2-TV-ccL"/>
+                                        <constraint firstAttribute="width" constant="10" id="6rx-Lj-Dla"/>
+                                        <constraint firstItem="oro-WW-ust" firstAttribute="leading" secondItem="xda-eR-SiU" secondAttribute="leading" id="ITk-jq-xqI"/>
+                                        <constraint firstAttribute="trailing" secondItem="oro-WW-ust" secondAttribute="trailing" id="a5F-1a-3n6"/>
+                                        <constraint firstAttribute="bottom" secondItem="oro-WW-ust" secondAttribute="bottom" id="f8H-rM-OAk"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="oro-WW-ust" id="YFf-uI-WZa"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhQ-9P-CBX" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="50" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5Om-5K-YfJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="5Om-5K-YfJ" firstAttribute="leading" secondItem="QhQ-9P-CBX" secondAttribute="leading" id="1C5-Cz-c68"/>
+                                        <constraint firstAttribute="trailing" secondItem="5Om-5K-YfJ" secondAttribute="trailing" id="Ega-Nc-RgX"/>
+                                        <constraint firstAttribute="width" constant="10" id="Hg6-NS-cje"/>
+                                        <constraint firstAttribute="bottom" secondItem="5Om-5K-YfJ" secondAttribute="bottom" id="Kbb-VI-goo"/>
+                                        <constraint firstItem="5Om-5K-YfJ" firstAttribute="top" secondItem="QhQ-9P-CBX" secondAttribute="top" id="vUB-NG-p3H"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="5Om-5K-YfJ" id="b1F-zn-uoC"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8V-14-YKi" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="60" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PEn-HR-HZE">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="PEn-HR-HZE" firstAttribute="top" secondItem="j8V-14-YKi" secondAttribute="top" id="2Rf-f5-iS7"/>
+                                        <constraint firstAttribute="bottom" secondItem="PEn-HR-HZE" secondAttribute="bottom" id="cFe-Sz-S4A"/>
+                                        <constraint firstItem="PEn-HR-HZE" firstAttribute="leading" secondItem="j8V-14-YKi" secondAttribute="leading" id="dlT-V6-dS9"/>
+                                        <constraint firstAttribute="width" constant="10" id="mrN-xY-k8i"/>
+                                        <constraint firstAttribute="trailing" secondItem="PEn-HR-HZE" secondAttribute="trailing" id="zQL-ph-lvm"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="PEn-HR-HZE" id="4RN-Cg-ae3"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFn-I9-Bh7" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="70" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nFa-XR-f6h">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="nFa-XR-f6h" firstAttribute="top" secondItem="XFn-I9-Bh7" secondAttribute="top" id="Bp4-rc-IkT"/>
+                                        <constraint firstAttribute="width" constant="10" id="e64-Bg-ef9"/>
+                                        <constraint firstAttribute="trailing" secondItem="nFa-XR-f6h" secondAttribute="trailing" id="kSo-QX-IUw"/>
+                                        <constraint firstItem="nFa-XR-f6h" firstAttribute="leading" secondItem="XFn-I9-Bh7" secondAttribute="leading" id="v74-hI-1Rx"/>
+                                        <constraint firstAttribute="bottom" secondItem="nFa-XR-f6h" secondAttribute="bottom" id="wjh-eC-bzp"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="nFa-XR-f6h" id="35o-eU-XnG"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-sd-aX3" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="80" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="loc-qA-9Ix">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="loc-qA-9Ix" secondAttribute="trailing" id="fLk-Xs-7oh"/>
+                                        <constraint firstItem="loc-qA-9Ix" firstAttribute="leading" secondItem="gOe-sd-aX3" secondAttribute="leading" id="o7m-dN-JNq"/>
+                                        <constraint firstItem="loc-qA-9Ix" firstAttribute="top" secondItem="gOe-sd-aX3" secondAttribute="top" id="ovd-RD-Hha"/>
+                                        <constraint firstAttribute="width" constant="10" id="qVX-R3-1qt"/>
+                                        <constraint firstAttribute="bottom" secondItem="loc-qA-9Ix" secondAttribute="bottom" id="t54-4i-3z2"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="loc-qA-9Ix" id="Jzf-SU-su5"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOj-nc-jBY" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="90" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2il-2C-ZKB">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="2il-2C-ZKB" secondAttribute="bottom" id="O8C-pX-J2N"/>
+                                        <constraint firstAttribute="trailing" secondItem="2il-2C-ZKB" secondAttribute="trailing" id="ZFg-dy-b8X"/>
+                                        <constraint firstItem="2il-2C-ZKB" firstAttribute="top" secondItem="HOj-nc-jBY" secondAttribute="top" id="dWK-oa-Mrz"/>
+                                        <constraint firstItem="2il-2C-ZKB" firstAttribute="leading" secondItem="HOj-nc-jBY" secondAttribute="leading" id="jAN-gn-SgU"/>
+                                        <constraint firstAttribute="width" constant="10" id="wEV-9R-fOe"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="2il-2C-ZKB" id="1nT-Rm-YXV"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LW7-kE-Wdb" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="100" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dzM-dn-eUm">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="dzM-dn-eUm" firstAttribute="top" secondItem="LW7-kE-Wdb" secondAttribute="top" id="F0Y-bQ-s8i"/>
+                                        <constraint firstItem="dzM-dn-eUm" firstAttribute="leading" secondItem="LW7-kE-Wdb" secondAttribute="leading" id="P9l-yl-mlP"/>
+                                        <constraint firstAttribute="bottom" secondItem="dzM-dn-eUm" secondAttribute="bottom" id="TU3-HN-Bps"/>
+                                        <constraint firstAttribute="width" constant="10" id="XEh-mm-AfR"/>
+                                        <constraint firstAttribute="trailing" secondItem="dzM-dn-eUm" secondAttribute="trailing" id="sQj-BP-StF"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="dzM-dn-eUm" id="vr4-8n-L0E"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77V-iJ-fqf" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="110" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="D4b-w8-UCY">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="D4b-w8-UCY" firstAttribute="top" secondItem="77V-iJ-fqf" secondAttribute="top" id="0X1-EZ-E5U"/>
+                                        <constraint firstAttribute="bottom" secondItem="D4b-w8-UCY" secondAttribute="bottom" id="O2t-cx-9Ol"/>
+                                        <constraint firstItem="D4b-w8-UCY" firstAttribute="leading" secondItem="77V-iJ-fqf" secondAttribute="leading" id="RvW-7o-JQE"/>
+                                        <constraint firstAttribute="trailing" secondItem="D4b-w8-UCY" secondAttribute="trailing" id="W46-sY-bcE"/>
+                                        <constraint firstAttribute="width" constant="10" id="e7t-7h-koi"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="D4b-w8-UCY" id="47Z-hN-Co6"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XqO-py-4Re" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="120" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I1C-F6-HKP">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="I1C-F6-HKP" secondAttribute="trailing" id="8Vn-1T-HX6"/>
+                                        <constraint firstAttribute="width" constant="10" id="CEo-bs-EBP"/>
+                                        <constraint firstItem="I1C-F6-HKP" firstAttribute="top" secondItem="XqO-py-4Re" secondAttribute="top" id="JHl-6j-e2I"/>
+                                        <constraint firstAttribute="bottom" secondItem="I1C-F6-HKP" secondAttribute="bottom" id="mUJ-iQ-v7c"/>
+                                        <constraint firstItem="I1C-F6-HKP" firstAttribute="leading" secondItem="XqO-py-4Re" secondAttribute="leading" id="olf-ly-Xgw"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="I1C-F6-HKP" id="6pc-4H-qQ8"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMf-6K-pc8" customClass="SlotCharacterView" customModule="SlotLabel" customModuleProvider="target">
+                                    <rect key="frame" x="130" y="0.0" width="10" height="22"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CDS-gt-Ip7">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.51764705879999995" green="0.29411764709999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="10" id="4bw-tz-3Qk"/>
+                                        <constraint firstAttribute="bottom" secondItem="CDS-gt-Ip7" secondAttribute="bottom" id="66J-vi-FUE"/>
+                                        <constraint firstAttribute="trailing" secondItem="CDS-gt-Ip7" secondAttribute="trailing" id="F7Q-HW-VeG"/>
+                                        <constraint firstItem="CDS-gt-Ip7" firstAttribute="leading" secondItem="lMf-6K-pc8" secondAttribute="leading" id="LsR-pc-bQq"/>
+                                        <constraint firstItem="CDS-gt-Ip7" firstAttribute="top" secondItem="lMf-6K-pc8" secondAttribute="top" id="c2a-AC-bDR"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="tableView" destination="CDS-gt-Ip7" id="Jon-Ah-2dk"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="z3j-MQ-yvR" secondAttribute="trailing" id="BNb-wM-2Vw"/>
+                        <constraint firstAttribute="bottom" secondItem="z3j-MQ-yvR" secondAttribute="bottom" id="I0y-NS-Up9"/>
+                        <constraint firstItem="z3j-MQ-yvR" firstAttribute="top" secondItem="BOr-Jq-qQT" secondAttribute="top" id="TFe-3s-QNm"/>
+                        <constraint firstItem="z3j-MQ-yvR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BOr-Jq-qQT" secondAttribute="leading" id="f7f-CO-lpP"/>
+                        <constraint firstAttribute="height" constant="22" id="fS8-Nc-Zjc"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="characterViews" destination="lMf-6K-pc8" collectionClass="NSMutableArray" id="GiE-gZ-zn1"/>
+                        <outletCollection property="characterViews" destination="XqO-py-4Re" collectionClass="NSMutableArray" id="TTk-d8-alc"/>
+                        <outletCollection property="characterViews" destination="77V-iJ-fqf" collectionClass="NSMutableArray" id="9OM-yo-eNG"/>
+                        <outletCollection property="characterViews" destination="LW7-kE-Wdb" collectionClass="NSMutableArray" id="uT3-KI-QsQ"/>
+                        <outletCollection property="characterViews" destination="HOj-nc-jBY" collectionClass="NSMutableArray" id="isZ-d0-5uj"/>
+                        <outletCollection property="characterViews" destination="gOe-sd-aX3" collectionClass="NSMutableArray" id="kAD-hf-Uzv"/>
+                        <outletCollection property="characterViews" destination="XFn-I9-Bh7" collectionClass="NSMutableArray" id="mTu-Bo-1EZ"/>
+                        <outletCollection property="characterViews" destination="j8V-14-YKi" collectionClass="NSMutableArray" id="bDb-Ck-VZP"/>
+                        <outletCollection property="characterViews" destination="QhQ-9P-CBX" collectionClass="NSMutableArray" id="UbZ-gz-9hI"/>
+                        <outletCollection property="characterViews" destination="xda-eR-SiU" collectionClass="NSMutableArray" id="3eg-SZ-0xW"/>
+                        <outletCollection property="characterViews" destination="Jsw-TQ-KEh" collectionClass="NSMutableArray" id="9oy-3w-3AV"/>
+                        <outletCollection property="characterViews" destination="mbB-j9-l2M" collectionClass="NSMutableArray" id="S15-pT-Sii"/>
+                        <outletCollection property="characterViews" destination="pxV-ra-TNI" collectionClass="NSMutableArray" id="wpD-hx-Y3G"/>
+                        <outletCollection property="characterViews" destination="3MN-fO-Wjq" collectionClass="NSMutableArray" id="Aov-Jr-Kt4"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe0-ZY-ShT">
+                    <rect key="frame" x="159" y="487" width="75" height="34.333333333333371"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Xe0-ZY-ShT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DkR-AG-DgV"/>
+                <constraint firstItem="BOr-Jq-qQT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JgN-TR-wrh"/>
+                <constraint firstItem="Xe0-ZY-ShT" firstAttribute="top" secondItem="BOr-Jq-qQT" secondAttribute="bottom" constant="50" id="mV4-tn-yiW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BOr-Jq-qQT" secondAttribute="trailing" id="pCc-8x-dgP"/>
+                <constraint firstItem="BOr-Jq-qQT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tZm-nL-EwK"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="42"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
