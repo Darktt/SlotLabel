@@ -1,5 +1,5 @@
 //
-//  CustomCellRegistrable.swift
+//  CustomCellRegisterable.swift
 //
 //  Created by Darktt on 19/8/13.
 //  Copyright © 2019 Darktt. All rights reserved.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol CustomCellRegistrable
+public protocol CustomCellRegisterable
 {
     static var cellNib: UINib? { get }
     
@@ -17,11 +17,11 @@ public protocol CustomCellRegistrable
 // MARK: - Extensions -
 // MARK: UITableView
 
-public typealias UITableViewCellRegistrable = (UITableViewCell & CustomCellRegistrable)
+public typealias UITableViewCellRegisterable = (UITableViewCell & CustomCellRegisterable)
 
 public extension UITableView
 {
-    func register<Cell>(_ cell: Cell.Type) where Cell: UITableViewCellRegistrable
+    func register<Cell>(_ cell: Cell.Type) where Cell: UITableViewCellRegisterable
     {
         if let nib = cell.cellNib {
             
@@ -32,14 +32,14 @@ public extension UITableView
         }
     }
     
-    func cellForRow<Cell>(_ cell: Cell.Type, at indexPath: IndexPath) -> Cell? where Cell: UITableViewCellRegistrable
+    func cellForRow<Cell>(_ cell: Cell.Type, at indexPath: IndexPath) -> Cell? where Cell: UITableViewCellRegisterable
     {
         let cell = self.cellForRow(at: indexPath) as? Cell
         
         return cell
     }
     
-    func dequeueReusableCell<Cell>(_ cell: Cell.Type, for indexPath: IndexPath) -> Cell? where Cell: UITableViewCellRegistrable
+    func dequeueReusableCell<Cell>(_ cell: Cell.Type, for indexPath: IndexPath) -> Cell? where Cell: UITableViewCellRegisterable
     {
         let cell = self.dequeueReusableCell(withIdentifier: cell.cellIdentifier, for: indexPath) as? Cell
         
@@ -49,11 +49,11 @@ public extension UITableView
 
 // MARK: UICollectionView
 
-public typealias UICollectionViewCellRegistrable = (UICollectionViewCell & CustomCellRegistrable)
+public typealias UICollectionViewCellRegisterable = (UICollectionViewCell & CustomCellRegisterable)
 
 public extension UICollectionView
 {
-    func register<Cell>(_ cell: Cell.Type) where Cell: UICollectionViewCellRegistrable
+    func register<Cell>(_ cell: Cell.Type) where Cell: UICollectionViewCellRegisterable
     {
         if let nib = cell.cellNib {
             
@@ -64,14 +64,14 @@ public extension UICollectionView
         }
     }
     
-    func cellForItem<Cell>(_ cell: Cell.Type, at indexPath: IndexPath) -> Cell? where Cell: UICollectionViewCellRegistrable
+    func cellForItem<Cell>(_ cell: Cell.Type, at indexPath: IndexPath) -> Cell? where Cell: UICollectionViewCellRegisterable
     {
         let cell = self.cellForItem(at: indexPath) as? Cell
         
         return cell
     }
     
-    func dequeueReusableCell<Cell>(_ cell: Cell.Type, for indexPath: IndexPath) -> Cell? where Cell: UICollectionViewCellRegistrable
+    func dequeueReusableCell<Cell>(_ cell: Cell.Type, for indexPath: IndexPath) -> Cell? where Cell: UICollectionViewCellRegisterable
     {
         let cell = self.dequeueReusableCell(withReuseIdentifier: cell.cellIdentifier, for: indexPath) as? Cell
         

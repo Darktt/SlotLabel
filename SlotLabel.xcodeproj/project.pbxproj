@@ -13,7 +13,7 @@
 		F25947BA2AA703E400529932 /* SlotCharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25947B82AA703E400529932 /* SlotCharacterCell.swift */; };
 		F25947BB2AA703E400529932 /* SlotCharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25947B92AA703E400529932 /* SlotCharacterCell.xib */; };
 		F29B5B7E2AA6C78A0053FE67 /* ViewControllerPreviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B5B7D2AA6C78A0053FE67 /* ViewControllerPreviewer.swift */; };
-		F29B5B862AA6D2F40053FE67 /* CustomCellRegistrable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B5B842AA6D2F40053FE67 /* CustomCellRegistrable.swift */; };
+		F29B5B862AA6D2F40053FE67 /* CustomCellRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B5B842AA6D2F40053FE67 /* CustomCellRegisterable.swift */; };
 		F2E450DA2AA822A000FD2F49 /* SlotNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E450D92AA822A000FD2F49 /* SlotNumberView.swift */; };
 		F2EB987B2A9C39E10027E887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB987A2A9C39E10027E887 /* AppDelegate.m */; };
 		F2EB987E2A9C39E10027E887 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB987D2A9C39E10027E887 /* SceneDelegate.m */; };
@@ -46,7 +46,7 @@
 		F25947B82AA703E400529932 /* SlotCharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotCharacterCell.swift; sourceTree = "<group>"; };
 		F25947B92AA703E400529932 /* SlotCharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlotCharacterCell.xib; sourceTree = "<group>"; };
 		F29B5B7D2AA6C78A0053FE67 /* ViewControllerPreviewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPreviewer.swift; sourceTree = "<group>"; };
-		F29B5B842AA6D2F40053FE67 /* CustomCellRegistrable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellRegistrable.swift; sourceTree = "<group>"; };
+		F29B5B842AA6D2F40053FE67 /* CustomCellRegisterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellRegisterable.swift; sourceTree = "<group>"; };
 		F2E450D92AA822A000FD2F49 /* SlotNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotNumberView.swift; sourceTree = "<group>"; };
 		F2EB98762A9C39E10027E887 /* SlotLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlotLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EB98792A9C39E10027E887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 				F23A5E5E2AA6BC350036C5DE /* SlotViewController.xib */,
 				F2EB98B52A9C67D90027E887 /* FluentInterface.swift */,
 				F29B5B7D2AA6C78A0053FE67 /* ViewControllerPreviewer.swift */,
-				F29B5B842AA6D2F40053FE67 /* CustomCellRegistrable.swift */,
+				F29B5B842AA6D2F40053FE67 /* CustomCellRegisterable.swift */,
 				F2EB98792A9C39E10027E887 /* AppDelegate.h */,
 				F2EB987A2A9C39E10027E887 /* AppDelegate.m */,
 				F2EB987C2A9C39E10027E887 /* SceneDelegate.h */,
@@ -206,7 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25947BA2AA703E400529932 /* SlotCharacterCell.swift in Sources */,
-				F29B5B862AA6D2F40053FE67 /* CustomCellRegistrable.swift in Sources */,
+				F29B5B862AA6D2F40053FE67 /* CustomCellRegisterable.swift in Sources */,
 				F29B5B7E2AA6C78A0053FE67 /* ViewControllerPreviewer.swift in Sources */,
 				F25947B72AA6F63800529932 /* SlotCharacterView.swift in Sources */,
 				F2EB987B2A9C39E10027E887 /* AppDelegate.m in Sources */,

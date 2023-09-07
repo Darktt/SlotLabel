@@ -42,7 +42,7 @@ public class SlotCharacterCell: UITableViewCell
 
 // MARK: - Confirm Protocol -
 
-extension SlotCharacterCell: CustomCellRegistrable
+extension SlotCharacterCell: CustomCellRegisterable
 {
     public static var cellNib: UINib? {
         
