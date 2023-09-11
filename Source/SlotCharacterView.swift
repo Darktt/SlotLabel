@@ -73,15 +73,21 @@ extension SlotCharacterView
 {
     func updateTableView(from oldText: String)
     {
-        guard self.textIndex >= 0, self.text != oldText else {
+        guard self.textIndex >= 0,
+              self.text != oldText else {
             
             return
         }
         
         self.updateOffset(with: oldText)
-        self.tableView.reloadData()
-        self.tableView.scrollToRow(self.offset, atScrollPosition: .middle, animated: false)
-        self.startAnimation()
+        
+        if self.offset > 0 {
+            
+            // 僅更新有變動的數值
+            self.tableView.reloadData()
+            self.tableView.scrollToRow(self.offset, atScrollPosition: .middle, animated: false)
+            self.startAnimation()
+        }
     }
     
     func updateOffset(with oldText: String)
@@ -140,8 +146,10 @@ extension SlotCharacterView
         }()
         if needsUpdate {
             
-            // 需做差異量調整就增加 10 次方的差異量
-            offset += Int(10.0.pow(Double(self.textIndex)))
+            // 需做差異量調整就增加 10 次方的差異量 (上限 10^3)
+            let power = Double(self.textIndex.minimum(compareWith: 3))
+            
+            offset += Int(10.0.pow(power))
         }
         
         self.offset = offset
